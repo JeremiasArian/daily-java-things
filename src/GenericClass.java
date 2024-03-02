@@ -1,5 +1,3 @@
-package generics;
-
 public class GenericClass<T> {
     private final T thing;
 
