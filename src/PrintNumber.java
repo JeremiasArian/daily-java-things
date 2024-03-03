@@ -12,4 +12,9 @@ public class PrintNumber {
     public int getNumber() {
         return this.number;
     }
+
+    @Override
+    public String toString() {
+        return "Number: " + getNumber();
+    }
 }

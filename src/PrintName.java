@@ -8,4 +8,9 @@ public class PrintName {
     public String getName() {
         return this.name;
     }
+
+    @Override
+    public String toString() {
+        return "Hello, " + getName();
+    }
 }

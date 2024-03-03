@@ -1,34 +1,34 @@
-public class SumOfNumbers {
+public class DivisionOfTwoNumbers {
     private int firstNumber;
     private int secondNumber;
 
-    public SumOfNumbers(int firstNumber, int secondNumber) {
+    public DivisionOfTwoNumbers(int firstNumber, int secondNumber) {
         this.setFirstNumber(firstNumber);
         this.setSecondNumber(secondNumber);
-    }
-
-    public int getFirstNumber() {
-        return firstNumber;
     }
 
     public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
     }
 
-    public int getSecondNumber() {
-        return secondNumber;
+    public int getFirstNumber() {
+        return this.firstNumber;
     }
 
     public void setSecondNumber(int secondNumber) {
         this.secondNumber = secondNumber;
     }
 
-    public int sum() {
-        return (this.getFirstNumber() + this.getSecondNumber());
+    public int getSecondNumber() {
+        return this.secondNumber;
+    }
+
+    public int division() {
+        return (getFirstNumber() / getSecondNumber());
     }
 
     @Override
     public String toString() {
-        return "Sum of the numbers: " + sum();
+        return "Division of numbers: " + division();
     }
 }

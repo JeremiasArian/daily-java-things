@@ -42,14 +42,14 @@ public class Main {
         String input = scanner.nextLine();
         PrintName name = new PrintName();
         name.setName(input);
-        System.out.println("Hello, " + name.getName() + ".");
+        System.out.println(name);
 
         //Printing a number.
         System.out.println("Enter a number:");
         int intInput = scanner.nextInt();
         PrintNumber number = new PrintNumber(intInput);
         number.setNumber(intInput);
-        System.out.println("Number: " + number.getNumber());
+        System.out.println(number);
 
         //Printing sum.
         System.out.println("Enter a number:");
@@ -57,6 +57,22 @@ public class Main {
         System.out.println("Enter another number:");
         int secondNumber = scanner.nextInt();
         SumOfNumbers newSum = new SumOfNumbers(firstNumber, secondNumber);
-        System.out.println("Sum of the numbers: " + newSum.sum());
+        System.out.println(newSum);
+
+        //Printing division.
+        System.out.println("Enter a number:");
+        int dividend = scanner.nextInt();
+        System.out.println("Enter another number:");
+        int divisor = scanner.nextInt();
+        DivisionOfTwoNumbers division = new DivisionOfTwoNumbers(dividend, divisor);
+        System.out.println(division);
+
+        //Printing product.
+        System.out.println("Enter a number:");
+        int firstProductNumber = scanner.nextInt();
+        System.out.println("Enter another number:");
+        int secondProductNumber = scanner.nextInt();
+        ProductOfNumbers product = new ProductOfNumbers(firstProductNumber, secondProductNumber);
+        System.out.println(product);
     }
 }
