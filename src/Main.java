@@ -74,5 +74,13 @@ public class Main {
         int secondProductNumber = scanner.nextInt();
         ProductOfNumbers product = new ProductOfNumbers(firstProductNumber, secondProductNumber);
         System.out.println(product);
+
+        //Printing a two-dimensional array.
+        System.out.println("Enter a number:");
+        int row = scanner.nextInt();
+        System.out.println("Enter another number:");
+        int column = scanner.nextInt();
+        TwoDimensionalArray theArray = new TwoDimensionalArray(row, column);
+        System.out.println(theArray);
     }
 }
