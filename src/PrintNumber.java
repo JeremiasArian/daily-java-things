@@ -1,20 +1,14 @@
+import java.util.Scanner;
+
 public class PrintNumber {
-    private int number;
+    public static void print() {
+        Scanner scanner = new Scanner(System.in);
 
-    public PrintNumber(int number) {
-        this.number = number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public int getNumber() {
-        return this.number;
-    }
-
-    @Override
-    public String toString() {
-        return "Number: " + getNumber();
+        System.out.println("Enter a number in the below line:");
+        int intInput = scanner.nextInt();
+        Number number = new Number(intInput);
+        number.setNumber(intInput);
+        System.out.println(number);
+        System.out.println();
     }
 }

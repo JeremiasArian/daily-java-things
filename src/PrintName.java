@@ -1,16 +1,14 @@
+import java.util.Scanner;
+
 public class PrintName {
-    private String name;
+    public static void print() {
+        Scanner scanner = new Scanner(System.in);
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    @Override
-    public String toString() {
-        return "Hello, " + getName();
+        System.out.println("Enter your name in the below line:");
+        String input = scanner.nextLine();
+        Name name = new Name();
+        name.setName(input);
+        System.out.println(name);
+        System.out.println();
     }
 }
